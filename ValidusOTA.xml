@@ -95,5 +95,20 @@
                 title="Gapps"
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </hammerhead>
+        <shamu>
+            <Filename>Validus-shamu-7.1.1.Release.v13-OFFICIAL-20161231-1311.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download TeslaN build">https://www.androidfilehost.com/?fid=601300970940399965</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View TeslaN changelogs">https://github.com/GZR-ValidusOS/OTA_config/blob/master/Changelogs/Nexus/Shamu/Changelog.txt</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
+        </shamu>
     </Stable>
 </SlimOTA>
