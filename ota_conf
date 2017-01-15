@@ -6,5 +6,5 @@ device_name=ro.product.device
 #example ro.validus.version=Validus-shamu-7.1.1.Release.v13-OFFICIAL-20170112-1923.zip
 version_source=ro.validus.version
 version_delimiter=-
-version_position=4
+version_position=5
 version_format=yyyyMMdd
