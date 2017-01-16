@@ -1,10 +1,81 @@
 ====================
+     01-15-2017
+====================
+
+   * OTA_config/
+9929598 Update ota_conf
+5fd8363 Update ValidusOTA.xml
+508cd09 Update ota_conf
+1d2457b test
+
+   * device/moto/shamu/
+bc888fec Update aosp_shamu.mk
+
+   * hardware/qcom/audio-caf/msm8994/
+0fb6b82d audio policy: fix capture indication to sound trigger service.
+28a90d7e audiopolicy: Avoid spurious routing in APM::stopSource
+
+   * manifest/
+cf146bd Update default.xml
+34d76af needs work
+
+   * packages/apps/Settings/
+283d384ef Missing imports
+
+====================
+     01-14-2017
+====================
+
+   * OTA_config/
+2f6f486 Validus init
+
+   * device/moto/shamu/
+5bbff9d1 shamu: fix speakerphone echo problem
+
+   * manifest/
+6b1bfb1 Add ota
+
+   * packages/apps/OmniSwitch/
+3d49460 I'll choose our shade of green
+
+   * packages/apps/Settings/
+24173fbd6 Add back ota support
+
+   * packages/apps/SlimOTA/
+f7269d4 Validus
+
+====================
      01-13-2017
 ====================
 
 
    * frameworks/base/
+60e3fdea2d9 FWB: The Return of the Ticker 2/2 Return of ticker work done by @rogersb11 Included are on and off switch from @Jubakuba Custom color selection for Ticker text and icons
 aaf25627d63 base: SystemUI: fix custom header dpi change behaviour
+
+   * hardware/qcom/audio-caf/msm8994/
+1ded135a policy_hal: Fix mismerges
+
+   * manifest/
+849fcf4 Update default.xml
+9f5f6a0 track our arm-eabi-4.9
+
+   * packages/apps/Settings/
+2c7bb5ef4 Cats cars everywhere
+
+   * packages/apps/WolvesDen/
+d153c01 Status Bar Ticker [2/2]
+
+====================
+     01-12-2017
+====================
+
+
+   * art/
+456088140 Fix arena allocation counting.
+43a02ae90 art: force enable of heap poisoning
+
+   * frameworks/base/
 90f931bd10b Fix guts not expanding when QSPanel is expanded
 59078e59c89 Fix issue when start android/com.android.internal.backup.LocalTransportService
 79260b854b2 Exclude users with guestToRemove in getUsers()
@@ -41,19 +112,7 @@ f4b3f09ed27 Fix right lockscreen shortcut icon resetting
 d6e58c38b80 SystemUI: Expose switch bar title
 b1a6ca563f1 Make Power Notification Controls scrollable
 2d0821170d2 [PackageManagerService]: Fixes can not boot issue.
-
-====================
-     01-12-2017
-====================
-
-
-   * art/
-456088140 Fix arena allocation counting.
-43a02ae90 art: force enable of heap poisoning
-
-   * frameworks/base/
 a4ef930813d Few extra battery fixes
-8a5cb71cb6e Battery icon improvements
 
 ====================
      01-11-2017
@@ -61,44 +120,12 @@ a4ef930813d Few extra battery fixes
 
 
    * frameworks/base/
+8a5cb71cb6e Battery icon improvements
 32743e09db8 Battery: correctly colorize the "!" critical level percentage text
 0335202421a Battery bolt: don't show it when using charging symbol near percentage text
 14476f997f0 Add a few bits back fer battery
 b77111f145f Revert "Fix thread safety issue"
 
-   * packages/apps/OmniStyle/
-7b2a2d9 [3/3] OmniStyle: add header browse activity
-1468973 OmniStyle: update README
-
    * vendor/moto/
 4f92dba4 delete unused files
-
-====================
-     01-10-2017
-====================
-
-
-   * frameworks/base/
-1755b863c9f [1/3] base: custom header extensions
-15ea44d7cb9 Remove the uneeded
-
-   * packages/apps/WolvesDen/
-ef06166 [2/3] OmniGears: custom header extensions static image provider call BrowseHeaderActivity from OmniStyle
-
-====================
-     01-09-2017
-====================
-
-
-   * frameworks/base/
-3f9eea5dd0d Optimize quick qs scroller commit
-6f91ee78fbb Adjusted animation timing
-19ab666f7dd Fix QuickQS visibility at non-first page
-440b2e20d9e base: SystemUI: all tile scroller for quickbar settings [1/2]
-a5df5890648 SystemUI: FIX No sim - airplane mode padding
-64a55fbf58f DefaultPermissionGrantPolicy: Pass correct arguments
-35a469b4e18 Added missing @DrawableRes
-
-   * packages/apps/WolvesDen/
-e3f0fab On-The-Go Mode (2/2)
 
