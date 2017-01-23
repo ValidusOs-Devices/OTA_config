@@ -12,5 +12,12 @@
                 title="Gapps"
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </shamu>
+        <OnePlus3>
+            <Filename>Validus-oneplus3-7.1.1.Release.v13-Official-20170123-0829.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download Validus op3 unified build">https://www.androidfilehost.com/?fid=745425885120702487</RomUrl>
+        </OnePlus3>
     </Stable>
 </SlimOTA>
