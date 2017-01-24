@@ -19,7 +19,7 @@
                 title="Rom"
                 description="Download Validus op3 unified build">https://www.androidfilehost.com/?fid=745425885120702487</RomUrl>
         </OnePlus3>
-        <bacon>
+        <A0001>
             <Filename>Validus-bacon-7.1.1.Release.v13-Official-20170123-2243.zip</Filename>
             <RomUrl
                 id="rom"
@@ -29,6 +29,6 @@
                 id="gapps"
                 title="Gapps"
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
-        </bacon>
+        </A0001>
     </Stable>
 </SlimOTA>
