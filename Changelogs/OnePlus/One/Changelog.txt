@@ -1,115 +1,185 @@
 ====================
-     01-24-2017
+     02-08-2017
 ====================
 
    * OTA_config/
-bbcf8d4 ota: moved to devices repo
-950741f start op3 OTA
+5452004 ota: Redmi2 02/08
 
-   * device/wingtech/wt88047/
-0f7e246 Revert "experimental: mic-gain for low in-call volume"
+   * bionic/
+055d909 Merge tag 'android-7.1.1_r22' of https://android.googlesource.com/platform/bionic into HEAD
 
-   * hardware/ril-caf/
-d8532a9 ril-caf: Only allow GET_CARRIER_RESTRICTIONS for ril versions >= 14
+   * build/
+8d45beb Merge tag 'android-7.1.1_r22' into n7.1.1
 
-   * packages/apps/OmniStyle/
-ddc9b25 Lets just keep lowercase android omnistyles isn't fond of caps
-3e2009c Merge pull request #2 from scoobyjenkins/n7.1.1
-74d5a3a Add Pete's Validus Headers
-1d699c2 Merge pull request #1 from Sajidjnl/n7.1.1
-b0272dc Omnistyle:Add wolf headers
-
-====================
-     01-23-2017
-====================
-
-
-   * device/huawei/angler/
-8388eb4 angler: enable gesture settings
+   * frameworks/av/
+ad869c9 Merge tag 'android-7.1.1_r22' of https://android.googlesource.com/platform/frameworks/av into HEAD
 
    * frameworks/base/
-abf3f0b Night auto brightness: restore user brightness values also after reboot
-b27453d Wider night light auto low brightness action
-ed2dc8d Merge the two night light options into one
-e4aabfc Night mode tile brightness: allow to set a different value [1/2]
-3fcc81e Night tile: automatically set a lower brightness when active [1/2]
-eebaafb Squash of v20 second screen offset commits display: Allow devices to manually offset window center
-5a58e78 QS Smart Ambient-LiftToWake tile: make it compatible with all devices
-ea5cd76 base: SystemUI: add text shadow for text in qs header and theme changes better visibility if header images are used not much difference if using default
+b24a1cc Net monitor: fix visual glitch on statusbar expand when autohide enabled
+37421d2 Merge tag 'android-7.1.1_r22' of https://android.googlesource.com/platform/frameworks/base into HEAD
+a2b42fe Fix keyguard clock derp [1/2]
 
-   * packages/apps/OmniStyle/
-d26cb98 Removed poly headers
-2cbedee Validus headers
+   * frameworks/native/
+0cd3016 Fix leak of file descriptors and memory.
+f095f6b Merge tag 'android-7.1.1_r22' of https://android.googlesource.com/platform/frameworks/native into HEAD
 
-   * packages/apps/Settings/
-c068951 Night light brightness options
+   * hardware/libhardware/
+fafd1c2 Merge tag 'android-7.1.1_r22' into n7.1.1
 
-   * packages/apps/WolvesDen/
-6f0536a Fix GA fc and saving the gesture cache
+   * hardware/qcom/audio-caf/msm8996/
+805af44 audio: configs: Enable Dolby feature
+afee25c Fix security vulnerability: Equalizer command might allow negative indexes
+502bcd6 Fix security vulnerability: Effect command might allow negative indexes
 
-   * packages/apps/masquerade/
-1c402c5 Release 20P: Initiate the caller package checking system
+   * hardware/qcom/media/
+2de60c7 media: Fix pathmap barrier
+ede7059 media: Use    * pathmap
 
-====================
-     01-22-2017
-====================
-
-
-   * frameworks/base/
-200c919 Revert "Fix InCallActivity onStop call when launch from Lockscreen"
-8d10399 Revert "Fix issue when start android/com.android.internal.backup.LocalTransportService"
-d3ca165 Add a protected broadcast for Masquerade events Parse extras to get event details. Docs will be available in Masquerade source code
-
-   * hardware/qcom/display-caf/msm8952/
-d7f8861 gralloc: allow forcing old pixel alignment
-
-   * packages/apps/DUI/
-4a92d22 DUI: Add one handed mode action [2/2]
-
-   * vendor/validus/
-e8c57c8 Merge pull request #2 from Andersonmendes2016/n7.1.1
-9e1a613 fix spaces
-
-====================
-     01-21-2017
-====================
-
-
-   * hardware/qcom/display-caf/msm8952/
-ee2bb0e Fix duplicate copy file rules
+   * libcore/
+48f7dff Merge tag 'android-7.1.1_r22' of https://android.googlesource.com/platform/libcore into HEAD
 
    * manifest/
-e3b64f3 omnijaws
+fd93f60 android-7.1.1_r22
+13ff72f apps/bluetoooth
+26d5970 libhardware
+0fc51b0 libcore
+f632e17 bionic
 
-   * packages/apps/DUI/
-02aa244 One hand: slidetouch listener only on navbar view
-cab927c fix
+   * packages/apps/Bluetooth/
+a0b201c Merge tag 'android-7.1.1_r22' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD
 
-   * vendor/validus/
-86cdd20 omnijaws
+   * packages/apps/ContactsCommon/
+4e47e8a Merge tag 'android-7.1.1_r22' into n7.1.1
+
+   * packages/apps/Messaging/
+c2547f7 Merge tag 'android-7.1.1_r22' into n7.1.1
+
+   * packages/apps/OmniStyle/
+b772383 Add Various walls from team and community
+
+   * packages/apps/WolvesDen/
+9c8cd48 Fix keyguard clock derp [2/2]
+
+   * system/core/
+cd8be20 Merge tag 'android-7.1.1_r22' of https://android.googlesource.com/platform/system/core into HEAD
+
+   * system/sepolicy/
+1682e0f Merge tag 'android-7.1.1_r22' of https://android.googlesource.com/platform/system/sepolicy into HEAD
 
 ====================
-     01-20-2017
+     02-07-2017
 ====================
 
 
    * external/DUtils/
-ecfb68d DUI: add bitmap size validation method [1/2]
+4034a87 Separate one handed mode icons [2/2]
 
-   * hardware/qcom/audio-caf/msm8974/
-0eb5d2a msm8974: Remove deprecated FM stuff.
-5c6e984 Fix security vulnerability: Equalizer command might allow negative indexes
-594a202 Fix security vulnerability: Effect command might allow negative indexes
+   * frameworks/base/
+0058ae3 Keyguard statusbar clock [1/2] - Currently this only enables the clock on the left side in the keyguard.
 
-   * manifest/
-ada0014 Update default.xml
+   * hardware/qcom/media/
+237f366 libstagefrighthw: Remove padding in encoder_nativehandle_buffer_type
+719a679 mm-video-legacy: venc: update metadata-type used for HAL1 based  recording
+99a5f4c mm-video-legacy: venc: update allocation-size check for meta-buffer
+b0a043c Enable TARGET_COMPILE_WITH_MSM_KERNEL guard
+23b40f1 media: Use kernel headers
+960bbe3 Revert "msm8974: remove from top level makefile"
 
    * packages/apps/DUI/
-fffce17 Merge branch 'n7.1.1' of https://github.com/GZR-ValidusOS/packages_apps_DUI into n7.1.1
+6e0ea44 Separate one handed mode icons [1/2]
 
-   * packages/apps/KernelAdiutor/
-3b5a548 Revert "Fix calculation of big.LITTLE cores on SD82*"
+   * packages/apps/Messaging/
+7e80ddd Night Small tint adjustments
 
    * packages/apps/WolvesDen/
-f36b702 One handed mode toggle [3/3]
+4ae459a Keyguard statusbar clock [2/2] Change-Id: I13f1cb2ff88696e9328716fb364e469bad50dfe3
+018227f Hide bottom shortcuts [2/2] Change-Id: I8e824d7edc2f55df0a3b5a421ab7b604e33c56f2
+
+   * system/core/
+c87153d Don't go busy loop when waiting child process.
+8a2d32d Add custom hosts file to block some s#it by default
+
+====================
+     02-06-2017
+====================
+
+
+   * device/qcom/common/
+46aef1a extractors: Set INITIAL_COPYRIGHT_YEAR
+3aa1b57 extractors: Add msm8952 blobs
+2dfe120 Revert "extractors: Update msm8996 graphics blobs info"
+3991a35 Revert "extractors: Add msm8996 32bit libmm-disp-apis and libmm-qdcm"
+c73bcd6 extractors: Add msm8996 32bit libmm-disp-apis and libmm-qdcm
+efa3a0d extractors: Update msm8996 graphics blobs info
+f3e87e1 extractors: Split 32/64 makefiles
+10122e9 qcom: extractors: Add msm8960 graphics list
+287f957 qc: Fix makefiles
+de3c316 power: msm8937: Improve boost values
+44208e8 power: msm8937: Remove display_hint_sent usage
+edbe285 power: msm8937: Fix build warnings
+d82cbef qc: Add guard makefile for binaries repo
+587505c extractors: Add origin branches for graphics blobs
+f4e7d8e Revert "Wait for QSEECom listeners before calling KMS APIs"
+9835058 Revert "cryptfs_hw: update the listener property with keymaster property"
+
+   * frameworks/base/
+5935953 Option to hide Running services header icon [1/2]
+c7507bf Allow to quickly open Running Services from notification/qs panel [1/2]
+
+   * hardware/qcom/keymaster/
+3e292c8 Merge remote-tracking branch 'slim/ng7.1' into HEAD
+
+   * manifest/
+e337823 Track PhoneCommon
+
+   * packages/apps/OmniStyle/
+41180f0 Add Dodds Headers
+
+   * packages/apps/Settings/
+9a38c1e Allow to quickly open Running Services from notification/qs panel [2/2]
+
+   * packages/apps/WolvesDen/
+3fde788 Option to hide Running services header icon [2/2]
+
+====================
+     02-05-2017
+====================
+
+
+   * device/oppo/common/
+6bbe2ce oppo-common: Calculate TrustZone size at runtime
+567017d releasetools: Wipe DDR partition when updating SBL or RPM
+
+====================
+     02-04-2017
+====================
+
+
+   * device/wingtech/wt88047/
+4a633f5 system_prop: Hardware info
+cdc7e61 overlay: enable nightlight
+7785d7d overlay: lockscreen charging info, real time values
+
+   * frameworks/base/
+5fd6000 Remove drawables we don't need
+f2672b8 revert some fastJni
+d2e08df Prevent re-entrant watcher from causing exception.
+08ab6eb qs: hotspot: longclick should open tethering settings
+5a733a6 Better QS detail clip animation
+e006b0f Icon does not disappear even though it is disabled in Launcher
+e05f580 Add tile information to ACTION_QS_TILE_PREFERENCES intent
+b817c99 SystemUI: PowerNotification: Add up button to fragment
+e8308c6 Themes: Expose Keyguard affordance circle background
+52a9f97 graphics: ADB "N" icon compatible with OMS7
+ff39d7f Fix moveTaskToBack: Activity below home were resumed instead of home
+1655aec SystemUI: Long press Usb tether tile to open tethering settings
+7c06fb3 Statusbar: Gracefully adapt 3Minit Battery hook for AOSP
+988923e Add 3Minit battery mod
+26f97e8 Repair Battery tile custom switch
+24289d8 Ticker Fixes - Correctly manipulate with center clock view
+3beba49 QS WiFi easy toggle: if enabled, long press for detail view
+1241931 QS BT easy toggle: if enabled, long press for detail view
+
+   * packages/apps/WolvesDen/
+bded6a8 QS WiFi easy toggle: if enabled, long press for detail view ** DU Edit ** Modify methods to unify all of the tile types into one singular tile -- and strings too.
 
