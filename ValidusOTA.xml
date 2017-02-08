@@ -30,5 +30,16 @@
                 title="Gapps"
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </A0001>
+        <wt88047>
+            <Filename>Validus-wt88047-7.1.1.Release.v13-Official-20170208-0623.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download Validus build">https://www.androidfilehost.com/?fid=529152257862701418</RomUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
+        </wt88047>
     </Stable>
 </SlimOTA>
