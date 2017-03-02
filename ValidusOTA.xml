@@ -75,11 +75,11 @@
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
          </flounder>
          <clark>
-             <Filename>Validus-clark-7.1.1.Release.13.5-Official-20170222-1813.zip</Filename>
+             <Filename>Validus-clark-7.1.1.Release.13.5-Official-20170302-0942.zip</Filename>
              <RomUrl
                  id="rom"
                  title="Rom"
-                 description="Download Validus build">https://www.androidfilehost.com/?fid=457095661767139396</RomUrl>
+                 description="Download Validus build">https://www.androidfilehost.com/?fid=529152257862707181</RomUrl>
              <GappsUrl
                 id="gapps"
                 title="Gapps"
