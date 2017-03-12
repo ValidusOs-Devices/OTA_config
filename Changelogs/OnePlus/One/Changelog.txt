@@ -1,185 +1,123 @@
 ====================
-     02-08-2017
+     03-12-2017
 ====================
 
    * OTA_config/
-5452004 ota: Redmi2 02/08
-
-   * bionic/
-055d909 Merge tag 'android-7.1.1_r22' of https://android.googlesource.com/platform/bionic into HEAD
-
-   * build/
-8d45beb Merge tag 'android-7.1.1_r22' into n7.1.1
-
-   * frameworks/av/
-ad869c9 Merge tag 'android-7.1.1_r22' of https://android.googlesource.com/platform/frameworks/av into HEAD
+89422c5 ota: update Redmi2 03/12
 
    * frameworks/base/
-b24a1cc Net monitor: fix visual glitch on statusbar expand when autohide enabled
-37421d2 Merge tag 'android-7.1.1_r22' of https://android.googlesource.com/platform/frameworks/base into HEAD
-a2b42fe Fix keyguard clock derp [1/2]
+93c0b35 New easter egg designs Wolf: Light theme Clown: Dark theme
+b8daf21 Slim Recent: scale apps thumbnails according to the panel size
 
-   * frameworks/native/
-0cd3016 Fix leak of file descriptors and memory.
-f095f6b Merge tag 'android-7.1.1_r22' of https://android.googlesource.com/platform/frameworks/native into HEAD
+====================
+     03-11-2017
+====================
 
-   * hardware/libhardware/
-fafd1c2 Merge tag 'android-7.1.1_r22' into n7.1.1
 
-   * hardware/qcom/audio-caf/msm8996/
-805af44 audio: configs: Enable Dolby feature
-afee25c Fix security vulnerability: Equalizer command might allow negative indexes
-502bcd6 Fix security vulnerability: Effect command might allow negative indexes
-
-   * hardware/qcom/media/
-2de60c7 media: Fix pathmap barrier
-ede7059 media: Use    * pathmap
-
-   * libcore/
-48f7dff Merge tag 'android-7.1.1_r22' of https://android.googlesource.com/platform/libcore into HEAD
+   * frameworks/base/
+bfdfa3b Slim Recent new multiwindow when multiwindow already active: make it more robust
+6d85652 Slim Recent Refactor: full code rewrite and new UI
 
    * manifest/
-fd93f60 android-7.1.1_r22
-13ff72f apps/bluetoooth
-26d5970 libhardware
-0fc51b0 libcore
-f632e17 bionic
-
-   * packages/apps/Bluetooth/
-a0b201c Merge tag 'android-7.1.1_r22' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD
-
-   * packages/apps/ContactsCommon/
-4e47e8a Merge tag 'android-7.1.1_r22' into n7.1.1
-
-   * packages/apps/Messaging/
-c2547f7 Merge tag 'android-7.1.1_r22' into n7.1.1
-
-   * packages/apps/OmniStyle/
-b772383 Add Various walls from team and community
+53b88e9 Cards no longer needed
 
    * packages/apps/WolvesDen/
-9c8cd48 Fix keyguard clock derp [2/2]
-
-   * system/core/
-cd8be20 Merge tag 'android-7.1.1_r22' of https://android.googlesource.com/platform/system/core into HEAD
-
-   * system/sepolicy/
-1682e0f Merge tag 'android-7.1.1_r22' of https://android.googlesource.com/platform/system/sepolicy into HEAD
+7c93c46 Slim Recents refactor: add back cards color
 
 ====================
-     02-07-2017
+     03-10-2017
 ====================
 
-
-   * external/DUtils/
-4034a87 Separate one handed mode icons [2/2]
+   * OTA_config/
+22336e8 Validus 03/10
+9658325 Clark 03/10
 
    * frameworks/base/
-0058ae3 Keyguard statusbar clock [1/2] - Currently this only enables the clock on the left side in the keyguard.
-
-   * hardware/qcom/media/
-237f366 libstagefrighthw: Remove padding in encoder_nativehandle_buffer_type
-719a679 mm-video-legacy: venc: update metadata-type used for HAL1 based  recording
-99a5f4c mm-video-legacy: venc: update allocation-size check for meta-buffer
-b0a043c Enable TARGET_COMPILE_WITH_MSM_KERNEL guard
-23b40f1 media: Use kernel headers
-960bbe3 Revert "msm8974: remove from top level makefile"
-
-   * packages/apps/DUI/
-6e0ea44 Separate one handed mode icons [1/2]
-
-   * packages/apps/Messaging/
-7e80ddd Night Small tint adjustments
-
-   * packages/apps/WolvesDen/
-4ae459a Keyguard statusbar clock [2/2] Change-Id: I13f1cb2ff88696e9328716fb364e469bad50dfe3
-018227f Hide bottom shortcuts [2/2] Change-Id: I8e824d7edc2f55df0a3b5a421ab7b604e33c56f2
-
-   * system/core/
-c87153d Don't go busy loop when waiting child process.
-8a2d32d Add custom hosts file to block some s#it by default
-
-====================
-     02-06-2017
-====================
-
-
-   * device/qcom/common/
-46aef1a extractors: Set INITIAL_COPYRIGHT_YEAR
-3aa1b57 extractors: Add msm8952 blobs
-2dfe120 Revert "extractors: Update msm8996 graphics blobs info"
-3991a35 Revert "extractors: Add msm8996 32bit libmm-disp-apis and libmm-qdcm"
-c73bcd6 extractors: Add msm8996 32bit libmm-disp-apis and libmm-qdcm
-efa3a0d extractors: Update msm8996 graphics blobs info
-f3e87e1 extractors: Split 32/64 makefiles
-10122e9 qcom: extractors: Add msm8960 graphics list
-287f957 qc: Fix makefiles
-de3c316 power: msm8937: Improve boost values
-44208e8 power: msm8937: Remove display_hint_sent usage
-edbe285 power: msm8937: Fix build warnings
-d82cbef qc: Add guard makefile for binaries repo
-587505c extractors: Add origin branches for graphics blobs
-f4e7d8e Revert "Wait for QSEECom listeners before calling KMS APIs"
-9835058 Revert "cryptfs_hw: update the listener property with keymaster property"
-
-   * frameworks/base/
-5935953 Option to hide Running services header icon [1/2]
-c7507bf Allow to quickly open Running Services from notification/qs panel [1/2]
-
-   * hardware/qcom/keymaster/
-3e292c8 Merge remote-tracking branch 'slim/ng7.1' into HEAD
+ae4973e base: qs weather: Start Google Weather on LongClick
+b975ee0 New adb icon
 
    * manifest/
-e337823 Track PhoneCommon
+9c39f11 Merge pull request #3 from rohitjaiswal/patch-1
 
-   * packages/apps/OmniStyle/
-41180f0 Add Dodds Headers
+   * packages/services/OmniJaws/
+ac837d6 OmniJaws: Clean up unused imports, simpify few things
+c0342f7 OmniJaws: Add menu item to search for Chronus icons
+f036d71 OmniJaws: manifest add DEFAULT category to activities
+
+====================
+     03-09-2017
+====================
+
 
    * packages/apps/Settings/
-9a38c1e Allow to quickly open Running Services from notification/qs panel [2/2]
-
-   * packages/apps/WolvesDen/
-3fde788 Option to hide Running services header icon [2/2]
+13b9429 Redesigned Substratum icon Got rid of the brush brought in something the coinsides with the new icon.
 
 ====================
-     02-05-2017
+     03-08-2017
 ====================
 
+   * OTA_config/
+c0063a2 Flo 03/08
+74c0d4e ota: update Redmi2 03/08
 
-   * device/oppo/common/
-6bbe2ce oppo-common: Calculate TrustZone size at runtime
-567017d releasetools: Wipe DDR partition when updating SBL or RPM
+   * build/
+c86e3a2 March security update
 
-====================
-     02-04-2017
-====================
-
-
-   * device/wingtech/wt88047/
-4a633f5 system_prop: Hardware info
-cdc7e61 overlay: enable nightlight
-7785d7d overlay: lockscreen charging info, real time values
+   * frameworks/av/
+792b5b3 avc_utils: skip empty NALs from malformed bistreams
+f21296a DO NOT MERGE - audioflinger: fix recursive mutex lock in EffectHandle.
+b26bab5 Don't initialize sync sample parameters until the end
+0491abc DO NOT MERGE - improve audio effect framwework thread safety
 
    * frameworks/base/
-5fd6000 Remove drawables we don't need
-f2672b8 revert some fastJni
-d2e08df Prevent re-entrant watcher from causing exception.
-08ab6eb qs: hotspot: longclick should open tethering settings
-5a733a6 Better QS detail clip animation
-e006b0f Icon does not disappear even though it is disabled in Launcher
-e05f580 Add tile information to ACTION_QS_TILE_PREFERENCES intent
-b817c99 SystemUI: PowerNotification: Add up button to fragment
-e8308c6 Themes: Expose Keyguard affordance circle background
-52a9f97 graphics: ADB "N" icon compatible with OMS7
-ff39d7f Fix moveTaskToBack: Activity below home were resumed instead of home
-1655aec SystemUI: Long press Usb tether tile to open tethering settings
-7c06fb3 Statusbar: Gracefully adapt 3Minit Battery hook for AOSP
-988923e Add 3Minit battery mod
-26f97e8 Repair Battery tile custom switch
-24289d8 Ticker Fixes - Correctly manipulate with center clock view
-3beba49 QS WiFi easy toggle: if enabled, long press for detail view
-1241931 QS BT easy toggle: if enabled, long press for detail view
+6c3c09f base: Force authorize all calling packages by Masquerade (2/3)
+71e7764 FWB: Give power dialogs own set of volume icons for themes
+e6dbe99 OMS: Add hide annotation to MODIFY_OVERLAYS permission
+0b9b182 Revert "Add a protected broadcast for Masquerade events"
+002710e OMS7: Rootless Security Update Preparation for March 2017
+cf0e3fd Fix issue with saving admins before finishing loading.
+e733ace resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev
+8849f93 Fix exploit where can hide the fact that a location was mocked am: a206a0f17e am: d417e54872 am: 3380a77516 am: 0a8978f04b am: 1684e5f344 am: d28eef0cc2 am: 1f458fdc66 am: d82f8a67fc am: 1ac8affd51 am: 56098f81b6 am: 7cec76de0f am: 2da05d0f9e
+d3eebed [DO NOT MERGE] Prevent crash from early Toast surface destruction.
+4a5bbdd Add @GuardedBy annotation to PersistentDataBlockService#mIsWritable.
+51a3329 Prevent writing to FRP partition during factory reset.
 
-   * packages/apps/WolvesDen/
-bded6a8 QS WiFi easy toggle: if enabled, long press for detail view ** DU Edit ** Modify methods to unify all of the tile types into one singular tile -- and strings too.
+   * hardware/qcom/display-caf/msm8996/
+938e782 display: Fix ColorMetaData
+d5d627d display-caf: msm8996: Use ColorMetaData in SDM in hwc2
+718be10 display-caf: 8996: Add color metadata to libgralloc1
+
+   * manifest/
+04df1f7 Themeinterfacer
+dce4e05 r28
+
+   * packages/apps/Settings/
+4616a10 Settings: Expose styles in the manifest for themes
+50eee4c Settings: Expose "ALL" hardcoded and @android colors
+8972aa8 Settings: Expose and add tint mode to custom icons
+9c7c362 Settings: Guard against themes without colorAccent defined
+a23c19c Development: Allow all Masquerade calling packages for debugging (3/3)
+
+   * system/sepolicy/
+099f786 Sneaky
+fb4d312 Welcome to Theme Interfacer! [2/2]
+962b62b sepolicy: Redo masquerade rules
+cf7b432 sepolicy: Fix application of bootanimation
+01e7555 sepolicy: allow masquerade to read and write theme assets
+69a4f36 sepolicy: rename masquerade domain and allow JobService in system_server
+273709c initial policy edits for masquerade to operate rootless
+9e400cb sepolicy: fix themed boot animation
+a455485 Introduce sepolicy exceptions for theme assets
+
+   * vendor/oneplus/
+9c56ba2 Merge pull request #2 from BigTopKrazies/test
+
+   * vendor/qcom/binaries/
+4e4570f we are NOT lineage.
+c6a6341 Merge pull request #8 from TheMuppets/cm-14.1
+dc32e68 msm8996: graphics: Update to LA.UM.5.5.r1-02500-8x96.0
+
+   * vendor/validus/
+1210450 v13.7 one up for rootless subs
+ff44880 Bring in ThemeInterfacer
 
