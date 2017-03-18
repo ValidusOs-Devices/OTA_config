@@ -1,123 +1,74 @@
 ====================
-     03-12-2017
+     03-18-2017
 ====================
 
    * OTA_config/
-89422c5 ota: update Redmi2 03/12
+93d2fa6 Flo 03/17
 
    * frameworks/base/
-93c0b35 New easter egg designs Wolf: Light theme Clown: Dark theme
-b8daf21 Slim Recent: scale apps thumbnails according to the panel size
+d4e4bd6 SlimRecents: Fix potential SystemUI NPE
 
-====================
-     03-11-2017
-====================
+   * packages/apps/OmniSwitch/
+ce64715 OmniSwitch: delay task info loading to speedup open
+4adb6ec OmniSwitch: more multi window tweaks
+44b262d OmniSwitch: basic multi window support
 
-
-   * frameworks/base/
-bfdfa3b Slim Recent new multiwindow when multiwindow already active: make it more robust
-6d85652 Slim Recent Refactor: full code rewrite and new UI
-
-   * manifest/
-53b88e9 Cards no longer needed
-
-   * packages/apps/WolvesDen/
-7c93c46 Slim Recents refactor: add back cards color
-
-====================
-     03-10-2017
-====================
-
-   * OTA_config/
-22336e8 Validus 03/10
-9658325 Clark 03/10
-
-   * frameworks/base/
-ae4973e base: qs weather: Start Google Weather on LongClick
-b975ee0 New adb icon
-
-   * manifest/
-9c39f11 Merge pull request #3 from rohitjaiswal/patch-1
-
-   * packages/services/OmniJaws/
-ac837d6 OmniJaws: Clean up unused imports, simpify few things
-c0342f7 OmniJaws: Add menu item to search for Chronus icons
-f036d71 OmniJaws: manifest add DEFAULT category to activities
-
-====================
-     03-09-2017
-====================
-
-
-   * packages/apps/Settings/
-13b9429 Redesigned Substratum icon Got rid of the brush brought in something the coinsides with the new icon.
-
-====================
-     03-08-2017
-====================
-
-   * OTA_config/
-c0063a2 Flo 03/08
-74c0d4e ota: update Redmi2 03/08
-
-   * build/
-c86e3a2 March security update
-
-   * frameworks/av/
-792b5b3 avc_utils: skip empty NALs from malformed bistreams
-f21296a DO NOT MERGE - audioflinger: fix recursive mutex lock in EffectHandle.
-b26bab5 Don't initialize sync sample parameters until the end
-0491abc DO NOT MERGE - improve audio effect framwework thread safety
-
-   * frameworks/base/
-6c3c09f base: Force authorize all calling packages by Masquerade (2/3)
-71e7764 FWB: Give power dialogs own set of volume icons for themes
-e6dbe99 OMS: Add hide annotation to MODIFY_OVERLAYS permission
-0b9b182 Revert "Add a protected broadcast for Masquerade events"
-002710e OMS7: Rootless Security Update Preparation for March 2017
-cf0e3fd Fix issue with saving admins before finishing loading.
-e733ace resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev
-8849f93 Fix exploit where can hide the fact that a location was mocked am: a206a0f17e am: d417e54872 am: 3380a77516 am: 0a8978f04b am: 1684e5f344 am: d28eef0cc2 am: 1f458fdc66 am: d82f8a67fc am: 1ac8affd51 am: 56098f81b6 am: 7cec76de0f am: 2da05d0f9e
-d3eebed [DO NOT MERGE] Prevent crash from early Toast surface destruction.
-4a5bbdd Add @GuardedBy annotation to PersistentDataBlockService#mIsWritable.
-51a3329 Prevent writing to FRP partition during factory reset.
-
-   * hardware/qcom/display-caf/msm8996/
-938e782 display: Fix ColorMetaData
-d5d627d display-caf: msm8996: Use ColorMetaData in SDM in hwc2
-718be10 display-caf: 8996: Add color metadata to libgralloc1
-
-   * manifest/
-04df1f7 Themeinterfacer
-dce4e05 r28
-
-   * packages/apps/Settings/
-4616a10 Settings: Expose styles in the manifest for themes
-50eee4c Settings: Expose "ALL" hardcoded and @android colors
-8972aa8 Settings: Expose and add tint mode to custom icons
-9c7c362 Settings: Guard against themes without colorAccent defined
-a23c19c Development: Allow all Masquerade calling packages for debugging (3/3)
-
-   * system/sepolicy/
-099f786 Sneaky
-fb4d312 Welcome to Theme Interfacer! [2/2]
-962b62b sepolicy: Redo masquerade rules
-cf7b432 sepolicy: Fix application of bootanimation
-01e7555 sepolicy: allow masquerade to read and write theme assets
-69a4f36 sepolicy: rename masquerade domain and allow JobService in system_server
-273709c initial policy edits for masquerade to operate rootless
-9e400cb sepolicy: fix themed boot animation
-a455485 Introduce sepolicy exceptions for theme assets
-
-   * vendor/oneplus/
-9c56ba2 Merge pull request #2 from BigTopKrazies/test
-
-   * vendor/qcom/binaries/
-4e4570f we are NOT lineage.
-c6a6341 Merge pull request #8 from TheMuppets/cm-14.1
-dc32e68 msm8996: graphics: Update to LA.UM.5.5.r1-02500-8x96.0
+   * packages/providers/MediaProvider/
+f2d36b3 MediaProvider: Fix possible NPE
+1b0da6c MediaProvider: Add read storage permission
 
    * vendor/validus/
-1210450 v13.7 one up for rootless subs
-ff44880 Bring in ThemeInterfacer
+07e1387 Merge pull request #3 from eldainosor/n7.1.1
+7b4beee apn: Updating Movistar Argentina APN
+
+====================
+     03-17-2017
+====================
+
+
+   * frameworks/base/
+9a7c521 Slim Recents: fix black killapp button on white cards
+8d053ef Add recent app info icon
+338c72c Slim Recents: don't show panel if app pinning is currently active
+
+====================
+     03-16-2017
+====================
+
+
+   * external/DUtils/
+2e5fcc3 Kill App action: remove the killed app from Recents list
+
+   * frameworks/base/
+d4945ab Location tile: add high accuracy state icon
+a4f906e Slim Recents: fix multiwindow glitch when docking app to bottom
+46edea4 SlimRecents: add killapp button to toptask card
+3ec7ae8 Slim Recents: fix toptask header layout and other ui improvements
+d64f36e Final GzR Easter egg design
+
+====================
+     03-15-2017
+====================
+
+
+   * device/oneplus/bacon/
+ba168a2 Add dependencies
+
+   * device/wingtech/wt88047/
+ee53094 update dependencies
+
+   * frameworks/base/
+646f63b Expose temperature text in DetailedWeatherView
+7bc3464 ThemeSafety: Introduce App Crash Intent
+4cac98e SubscriptionManager: remove unprovisioned sims from the list of active subscriptions
+
+   * packages/apps/Settings/
+cbab102 Fix possible NPE on SIM settings shutdown.
+e2069a7 Clean up SIM enable toggle implementation
+83a18d2 Settings: port manual provisiong support
+
+====================
+     03-14-2017
+====================
+
 
