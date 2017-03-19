@@ -1,71 +1,141 @@
 ====================
-     02-26-2017
-====================
-
-
-   * kernel/moto/shamu/
-5645cc21016 Support GCC 6.0
-5e6d0532121 Makefile opts
-
-   * manifest/
-b804bf9 derp
-304bb25 Track our masq
-
-====================
-     02-25-2017
-====================
-
-
-   * hardware/qcom/audio-caf/msm8916/
-8fe87cd5     audiopolicy: Update voice concurrency support for 8916
-680b47a6 Fix security vulnerability: Effect command might allow negative indexes
-65d785ef hal: fix for KW issues.
-c69c67ad hal:KW fixes
-
-   * hardware/qcom/display-caf/msm8916/
-c28e4d46b hwc: Add src image width and height check in prepare
-0cc44d27a libmemtrack: Fix integer overflow in kgsl function
-
-====================
-     02-24-2017
+     03-19-2017
 ====================
 
 
    * frameworks/base/
-f0895190e87 Ticker: We need to center it horozontal, not vertical
-06850054d7a Ticker: Center Ticker layout vertically in statusbar view
+e4ede5148ba Slim Recents icon pack: fallback to app icon if pack doesn't have any
+19455c3e5c0 Slim Recents iconpack support [1/2]
+4b66dfe41e6 Location tile easy toggle single tap: make it cycle modes
+585b299a57c Location tile: add high accuracy state icon
+a3bca13d49e Location tile: dynamic icon state also when easy toggle enabled
+f990428c85f Add location to Easy toggle [1/2]
+c9fe4f8d408 QS tiles string changes The following tiles all had one thing in common, they all failed to follow AOSP behavior. They all had the label show 'off' when the tile was in the off state. Normal AOSP behavior uses the drawable to indicate whether a tile is off or on. For example the flashlight tile which comes loaded on AOSP doesn't show Flashlight off when the tile is off. You can look at the other tiles such as WiFi, Airplane, Cast, Bluetooth and DND.
+26d83ee1402 Revert "Location tile: add high accuracy state icon"
+3f10833d41e Merge pull request #8 from psy-kminilte/n7.1.1
+75e31d08614 Add back volume button control [1/2]
+
+   * packages/apps/Settings/
+513951905 Merge pull request #2 from psy-kminilte/n7.1.1
+7c348748c Add back volume button control [2/2]
+
+   * packages/apps/WolvesDen/
+f392eea Add location to Easy toggle [2/2]
+135d2af Slim Recents iconpack support [2/2] ezio: adapted IconPackHelper from CM trebuchet (https://review.lineageos.org/#/c/136600/) with latest OmniSwitch improvements; splitted the whole dialog part and moved it into Settings; i've set here Danesh as commit author because he made the original IconPackHelper code long time ago.
 
 ====================
-     02-23-2017
-====================
-
-
-====================
-     02-22-2017
+     03-18-2017
 ====================
 
    * OTA_config/
-44b4fe9 Add clark
+0e9ce5a ota: update Bacon 03/18
+
+   * device/moto/shamu/
+e0a8633e Remove device double-tap to wake
+2ad59f06 fingerprint to N6F26U
+6ed3cd73 Shamu : Improve input boost config
+316ec214 Shamu : update sound trigger to support hotsound
+
+   * frameworks/av/
+ee5546d90 fixings
+3f5b5997b APM: Avoid invalidation of music stream if not required.
+9397b776e audio: Disable a2dp support on FM active
+7365f4cee audiopolicy: Add support for 384kHz audio playback
+38445eb36 audioflinger: fix for playback paused during track transition
+ddd079905 AudioFlinger: increase size of client heap
+1df1fd24f libstagefright: omx: Prevent assertion due to state mismatches
+2d51d277c Fix 64-bit comparison
+ea1c91b23 libstagefright: Avoid negative values for cttsOffsetTimeUs
+81ad4dd04 libstagefright: update cttsOffsetTimeUs for video track
+017cde67e stagefright: Support MP3 in MPEG4 containers
+092a93339 Stagefright: Do not skip frames in time-lapse-source for high-speed
+0fd357dff ACodec: Fix video autoscaling on old OMX decoders
+fdaac90f8 stagefright: ACodec: Selectively call VQZIP Info
+e29efb42f libstagefright: Use proper ctts offset
+2087bc657 IMediaSource: add check before calling readMultiple
+829f895fd MediaPlayerService: Clear the vector holding tracks
+c934c7f0f StagefrightRecorder: add null check for recording source
+4490698aa MediaPlayerService: Fix binder dereference while connecting to media services
+a401c58ad AudioTrack: Don't tear down sink for invalid offload track
+6a5369992 audio: Don't update the audio_output flag with track flags
+b8c9cbaf2 stagefright: add handling for Large metadata across binder
+3f9f18cb0 Stagefright: Addition of DS capability
+cc397f655 libstagefright: Restore AOSP's handling of 24/32-bit wav files
+22f7e4fe4 stagefright: allow multiple custom OMXPlugins
+
+   * kernel/moto/shamu/
+83857b72112 Few leftovers
+
+   * vendor/validus/
+07e1387 Merge pull request #3 from eldainosor/n7.1.1
+
+====================
+     03-17-2017
+====================
+
+   * OTA_config/
+93d2fa6 Flo 03/17
+
+   * device/moto/shamu/
+316ec214 Shamu : update sound trigger to support hotsound
+5923c8e7 Shamu : Update sound trigger configuration
+bfeac615 Shamu : Enable sound trigger
+f867e749 Shamu : add sound_trigger mixer info and path
+b243c4de Add the missing permission for google now listening everywhere
+fbd1e58a Shamu : add listen platform information file
+3a6042c7 Shamu : Add missing rates for deep buffer
+cbe01c5b addrloader: Fix missing string.h include
+3d91ee92 remove force encrypt
+0ca47980 Merge tag 'android-7.1.1_r28' into HEAD
 
    * frameworks/base/
-fc020087820 Pulse: allow custom opacity for solid line renderer [2/3]
-52ec21484b3 Pulse: Moar bars for solid line renderer [2/3]
-c482161752b Recents FAB: add transparency
+d4e4bd63393 SlimRecents: Fix potential SystemUI NPE
 
-   * packages/apps/DUI/
-67e3b4a Pulse: allow custom opacity for solid line renderer [1/3]
-dad4a96 Pulse: Moar bars for solid line renderer [1/3]
-1931717 Disable ongoing statusbar ime switcher notification
-b7a7bf7 Allow to set Ripple on other buttons for Home button only pixel animation [1/2]
-dfe10ae Smartbar: allow to set pixel ani for the home button only [1/2]
-571e348 SmartBar: Pixel button animation support [2/3]
-dc4261d Bring in initial Pixel Navbar animation resources [1/?]
-ff87f8c BoomShakaLaka!! He's on fire!!!
+   * kernel/moto/shamu/
+474729db2b3 Increase bark/pet time
+613f54e119d Wake Gestures: Expose tunables
+a31b6f65a6d drivers: wake_gestures: accept 2 as a valid input for dt2w I am so sick of users complaining that KA doesn't work with fullscreen, which is the intuitive option for our device as we only have two states (on or off), as opposed to some devices that have three states (off, on for half of the screen, or on for the entire screen). Make it so that if the user selects fullscreen (echoing 2 to the path) that it still works.
+7aec864d21d wake gestures: add camera launch gesture
+d60c81bbe69 touchscreen: increase wakeup delay
+8f8e45a1014 Wake gestures: suspended type changed to atomic_t
+97983bb08a4 Wake gestures: prevent touches during phone calls
+4ed6c05c8c9 Wake gestures: sweep2wake, sweep2sleep and doubletap2wake
+b05dd575615 remove notifier remnants
+580e0767482 Revert "drivers: state_notifier: Add toggle to use FB notifiers"
+54e86eed3e2 Revert "drivers: state_notifier: Implement suspend_defer_timer"
+1f7be71eb28 Merge tag 'android-7.1.1_r0.49' of https://android.googlesource.com/kernel/msm into n-mr1
 
-   * packages/apps/WolvesDen/
-cb701bb Pulse: allow custom opacity for solid line renderer [3/3]
-c41cd08 Pulse: Moar bars for solid line renderer [3/3]
-b604295 Allow to set Ripple on other buttons for Home button only pixel anima… …tion [2/2]
-f74b13f Smartbar: allow to set pixel ani for the home button only [2/2] Change-Id: Ib2010243a903e5c6a17da718d03aa3d15730b202
-9a1dfba SmartBar: Add Pixel to button animation settings [3/3] Change-Id: I060bc78d6f74627ae2b793dffa2bec33cd9fe049
+   * packages/apps/OmniSwitch/
+ce64715 OmniSwitch: delay task info loading to speedup open
+4adb6ec OmniSwitch: more multi window tweaks
+44b262d OmniSwitch: basic multi window support
+
+   * packages/providers/MediaProvider/
+f2d36b3 MediaProvider: Fix possible NPE
+1b0da6c MediaProvider: Add read storage permission
+
+   * vendor/validus/
+7b4beee apn: Updating Movistar Argentina APN
+
+====================
+     03-16-2017
+====================
+
+
+   * external/DUtils/
+2e5fcc3 Kill App action: remove the killed app from Recents list
+
+   * frameworks/base/
+9a7c5210820 Slim Recents: fix black killapp button on white cards
+8d053ef41ca Add recent app info icon
+338c72c312c Slim Recents: don't show panel if app pinning is currently active
+d4945ab62e6 Location tile: add high accuracy state icon
+a4f906e3d45 Slim Recents: fix multiwindow glitch when docking app to bottom
+46edea44f77 SlimRecents: add killapp button to toptask card
+3ec7ae8723f Slim Recents: fix toptask header layout and other ui improvements
+d64f36efa17 Final GzR Easter egg design
+
+====================
+     03-15-2017
+====================
 
