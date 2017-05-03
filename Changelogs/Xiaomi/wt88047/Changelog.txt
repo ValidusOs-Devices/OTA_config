@@ -1,140 +1,113 @@
 ====================
-     03-27-2017
+     05-03-2017
+====================
+
+
+   * device/wingtech/wt88047/
+327737e wt88047: charger: Switch to CM charger libhealthd
+
+====================
+     05-02-2017
 ====================
 
 
    * build/
-9beb548 Magisk as default and define explict rootless method [1/2]
-636263e Default root method provision [1/2]
+66e7719 N2G47O
+303299f N2G47N
+bfaf468 N2G47M
+dd3f3c2 N2G47L
+9d8aff8 N2G47K
+67d5c57 Update Security String to 2017-05-05 on nyc-dev
+e1d1113 Update Security String to 2017-05-01 on nyc-dev
+fa1f5a9 N2G47I
+412fe7e N2G47H
+37d5ea4 N2G47G
+3b78e8f N2G47F
 
-   * device/wingtech/wt88047/
-caad430 config: Default root method is rootless
-c04bdc8 disable fluence for voicecall/speaker
-
-   * packages/apps/KernelAdiutor/
-3623c82 Launcher icon update
-
-   * vendor/validus/
-93d81a8 Magisk as default and define explict rootless method [2/2]
-a36324f Default root method provision [2/2]
-
-====================
-     03-26-2017
-====================
-
-
-====================
-     03-25-2017
-====================
-
-
-   * device/oneplus/bacon/
-1778571 bacon: enable proximityCheckOnWake overlay
-
-   * device/wingtech/wt88047/
-005d698 overlay: enable proximity wake
+   * frameworks/av/
+e4af231 Add bounds check in SoftAACEncoder2::onQueueFilled()
+6fbc016 Fix NPDs in h263 decoder
+4d2d5d2 Fix out of bounds access
+07db334 Fix integer overflow and divide-by-zero
+84ef9b5 Validate lengths in HEVC metadata parsing
+2141d0f AudioFlinger: Check framecount overflow when creating track
 
    * frameworks/base/
-e846c8e Build Slim Recents into SystemUI [1/2]
-d7b7ecf Revert Slim Recents
-254759d [1/2] Add proximity wake
-6586157 Slim Recents: fix SystemUI fc
+552cb7c Remove bg_non_interactive cgroup [ DO NOT MERGE ]
+57ccc45 [DO NOT MERGE] Don't allow permission change to runtime
+1c55e4d [DO NOT MERGE] Throw exception if slot has invalid offset
+be5cc96 [DO NOT MERGE] Check bounds in offsetToPtr
+f3e8da5 Fix issue with saving admins before finishing loading.
+dcdd0e2 resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release
+56eedb2 Protect Bluetooth OPP ACCEPT and DECLINE broadcast
+0f17d2d fix anr when concurrent request provider
+5346f24 Ensure that the decor view is attached to window.
+40dabea6 Query geo description in worker thread to prevent ANR
+160d538 fix foreground process will be mistakenly killed when it uses content provider.
+409104e Fix PacketKeepalive.stop() crash
+04c8011 Restart persistent process if start timeout.
+30fe56c fix system_server crash issue caused by fd leak.
+
+   * frameworks/native/
+323752f binder: remove cgroup interactions [ DO NOT MERGE ]
 
    * manifest/
-a7a1d0e Track SlimRecents
+3244d17 7.1.2_r8
 
-   * packages/apps/OmniSwitch/
-33ca096 OmniSwitch: add missing docked task indicator for other views
+   * system/bt/
+01c8891 resolve merge conflicts of a3ee2e35 to nyc-dev
 
-   * packages/apps/Settings/
-d2f1e49 Merge branch 'n7.1.1' of https://github.com/GZR-ValidusOS/packages_apps_Settings into n7.1.1
-e9e6613 Themes: Expose SmartBar Dialogs from manifest Change-Id: I56775998901159074d5352cfd1eff2b79af28b26 Signed-off-by: Bryan Owens <djbryan3540@gmail.com>
-84a5917 Fix crash when proximity wake is not enabled
-545908c [2/2] Add proximity wake
-
-   * packages/apps/SlimRecents/
-3dcee9b Remove useless ic_menu_delete
-4aee805 Slim Recents: fix SystemUI fc 03-23 23:34:49.053 24500  9597 E AndroidRuntime: FATAL EXCEPTION: AsyncTask #183 03-23 23:34:49.053 24500  9597 E AndroidRuntime: Process: com.android.systemui, PID: 24500 03-23 23:34:49.053 24500  9597 E AndroidRuntime: java.lang.RuntimeException: An error occurred while executing doInBackground() 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at android.os.AsyncTask$3.done(AsyncTask.java:325) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:354) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at java.util.concurrent.FutureTask.setException(FutureTask.java:223) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at java.util.concurrent.FutureTask.run(FutureTask.java:242) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:243) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at java.lang.Thread.run(Thread.java:761) 03-23 23:34:49.053 24500  9597 E AndroidRuntime: Caused by: java.lang.IllegalStateException: Cannot call this method while RecyclerView is computing a layout or scrolling 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at android.support.v7.widget.RecyclerView.assertNotInLayoutOrScroll(RecyclerView.java:2455) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at android.support.v7.widget.RecyclerView$RecyclerViewDataObserver.onItemRangeChanged(RecyclerView.java:4801) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at android.support.v7.widget.RecyclerView$AdapterDataObservable.notifyItemRangeChanged(RecyclerView.java:10781) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at android.support.v7.widget.RecyclerView$AdapterDataObservable.notifyItemRangeChanged(RecyclerView.java:10772) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at android.support.v7.widget.RecyclerView$Adapter.notifyItemChanged(RecyclerView.java:6361) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at com.android.systemui.slimrecent.RecentPanelView$CardLoader.addCard(RecentPanelView.java:1166) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at com.android.systemui.slimrecent.RecentPanelView$CardLoader.doInBackground(RecentPanelView.java:1118) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at com.android.systemui.slimrecent.RecentPanelView$CardLoader.doInBackground(RecentPanelView.java:959) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at android.os.AsyncTask$2.call(AsyncTask.java:305) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at java.util.concurrent.FutureTask.run(FutureTask.java:237)
-affc50f Slim Recents: more fixes, cleanup and improvements -code cleanup -set max cache size to 1/6 max maxMemory -we use drawables for app icons, let's handle drawables also into the cache without bitmap to drawable conversions -add back mCardAdapter.notifyItemChanged(index) for app icon and thumbs loading, (those drawable are loaded in separated async tasks so sometimes they are ready after the card has been shown).
-588804d Slim Recents icon cache: clear it when changing scale factor
-e00a733 Slim Recents: add icon cache to improve performances - add back kufi LRU cache implementation to improve performances - adapt it to the new iconpack code - allow to clear the whole cache when changing the iconpack - don'd do a notifyItemChanged when loading card icon and screenshot, we do already notifyItemInserted in the mCardAdapter.addCard (this could also avoid sysui fc due to notifyItemChanged during animation).
-d2e53fe Slim Recents icon pack: fallback to app icon if pack doesn't have any
-543fb9c Slim Recents iconpack support [1/2] ezio: adapted IconPackHelper from CM trebuchet (https://review.lineageos.org/#/c/136600/) with latest OmniSwitch improvements; splitted the whole dialog part and moved it into Settings; i've set here Danesh as commit author because he made the original IconPackHelper code long time ago.
-98f165b SlimRecents: Fix potential SystemUI NPE 03-17 08:18:33.344 E/AndroidRuntime(1412): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.graphics.Bitmap.isRecycled()' on a null object reference https://www.hastebin.com/unoluyugih.bash
-eed0087 Slim Recents: fix black killapp button on white cards the button is red, no need to apply light/dark color
-db0ccfd Slim Recents: don't show panel if app pinning is currently active ezio edits: don't show the panel at all like stock aosp recents and also don't allow multiwindow action if slimrecents enabled and app pinning active
-b18cac8 Slim Recents: fix multiwindow glitch when docking app to bottom aosp multiwindow has this limitation, but we can easly bypass it just docking first the app we want to top, then the bottom one
-067cf36 SlimRecents: add killapp button to toptask card
-30bf4d3 Slim Recents: fix toptask header layout and other ui improvements
-457744c Slim Recent new multiwindow when multiwindow already active: make it more robust
-7afab28 Slim Recent Refactor: full code rewrite and new UI
-dbbd82e Slim Recent ui/logic/performances improvements, multiwindow and dynam… …ic drag actions
-e3cc099 lim recents: fix entries order, fix drawable FC, improve longpress O… …ptions
-f731c78 Slim Recents [1/2]
+   * system/core/
+89005cc libcutils: only change cgroup when fd is initialized [ DO NOT MERGE ]
+bfeb9a1 init.rc: remove bg_non_interactive cgroup [ DO NOT MERGE ]
 
    * vendor/validus/
-ac5fc3c magisk: 11.6, Nick's GzR v1.1
+eae7337 Magisk apk 4.3.3
 
 ====================
-     03-24-2017
+     05-01-2017
+====================
+
+   * OTA_config/
+b2bbafd Flo 05/01
+796cddb ota: bacon 04/30
+8ceaea6 Fix OTA
+28c606d Clark 04/30
+
+   * hardware/libhardware_legacy/
+34e331e wifi: add firmware loader support for the non-LKM case
+4c4410d wifi: Change USES_TI_MAC80211 to a BoardConfig flag
+8c738d0 wifi: Import CID_PATH from samsung_macloader.h
+644cb5c Nan: Changes to compile hal with Sigma_dut
+baf8c81 insmod: Add support for kernels that don't have finit_module
+
+   * packages/apps/MusicFX/
+e3e44ee Better layout for the Reverb spinner
+bfd00fd Theming: Center Visualizer view
+c372cb0 Theming: add missing reverb effects list background color
+
+   * packages/services/Telephony/
+fbcd8b9 VoicemailSettingsActivity: Fix NPE
+0296472 Revert "Add support to launch call barring"
+ae9e0c2 Telephony: Number of slot should start with 1
+
+   * system/sepolicy/
+1297c28 Merge tag 'android-7.1.2_r2' into n7.1.2
+
+====================
+     04-30-2017
 ====================
 
 
-   * frameworks/base/
-319768f Slim Recents: more fixes, cleanup and improvements
-
-   * packages/apps/Settings/
-853f2b6 Fix KA MainActivity call
-9beefaf Fix build
-1c82f68 Add Kernel Adiutor to dashboard
-550f0a3 Magisk icon OCD
-10edad4 Enable Development Settings By Default regardless of build type * also kill dev countdown + redo arleady enabled string
-
 ====================
-     03-23-2017
+     04-29-2017
 ====================
 
 
-   * frameworks/base/
-b3f822d Revert "NotificationManager: Concentrate LED light capabilities in a single location"
-86866f6 Merge remote-tracking branch 'origin/temp' into n7.1.1
-4f48b21 Fix build
-fce800c Add hook to handle multi window dock events better
-1a7619f Add vector for notification volume mute
-ef0095e sensors: Create bool to select what timestamp to use
-e0bda02 VolumeDialog: fix vibrate icon not showing after density change
-e08409f National roaming info for new Tuenti MNC in Spain
-75ddf6b Vectone UK (MNC01) considered non-roaming on T-Mobile (MNC30)
-4b17eb3 Add MVNO info for tele2 in Croatia
-1aeb215 Lycamobile (MNC04) considered non-roaming on Vodafone (MNC01)
-8eec98d Vectone/Delight (MNC07) considered non-roaming on NOS (MNC03)
-e1e2aad Tele2 considered non-roaming on T-Mo
-cd76e8b Allow T-Mobile AT (MNC03) to roam on 3 AT (MNC10) in Austria
-aa1d999 Added national roaming info for Spring Mobil in Sweden
-97ed103 Added national roaming info for Tesco Mobile in Ireland
-493bb99 National roaming info for 3 in Ireland
-e1d66ab SFR sims should treat Spain as roaming
-d24b20c Vodafone SIMs should treat Spain as roaming
-0b4978c Add hook to handle multi window dock events better
-f89c00f Add vector for notification volume mute
-dbadf8e sensors: Create bool to select what timestamp to use
-a44b226 VolumeDialog: fix vibrate icon not showing after density change
-29aa848 National roaming info for new Tuenti MNC in Spain
-931d6e6 Vectone UK (MNC01) considered non-roaming on T-Mobile (MNC30)
-c79fdfe Add MVNO info for tele2 in Croatia
-318a208 Lycamobile (MNC04) considered non-roaming on Vodafone (MNC01)
-8c9724e Vectone/Delight (MNC07) considered non-roaming on NOS (MNC03)
-5296720 Tele2 considered non-roaming on T-Mo
-cb99a71 Allow T-Mobile AT (MNC03) to roam on 3 AT (MNC10) in Austria
-0f3fc6f3 Added national roaming info for Spring Mobil in Sweden
-ecd282c Added national roaming info for Tesco Mobile in Ireland
-da669e5 National roaming info for 3 in Ireland
-6ea1d30 SFR sims should treat Spain as roaming
-6756050 Vodafone SIMs should treat Spain as roaming
+   * vendor/codeaurora/telephony/
+a57c572 IMS-VT: Send static image in a Video Call
+0e94dd0 Merge remote-tracking branch 'los/cm-14.1' into HEAD
 
-   * kernel/wingtech/msm8916/
-df2d8bd config: disable ondemand proximity sensor
-
-   * vendor/validus/
-0e0e0f3 Magisk: v11.6 zip, GzR edition by Nick
+   * vendor/qcom/opensource/dataservices/
+d736d3a dataservices: Don't pollute the tree
 
