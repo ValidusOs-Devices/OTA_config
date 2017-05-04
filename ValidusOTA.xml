@@ -72,11 +72,11 @@
                 description="Visit XDA thread">https://forum.xda-developers.com/nexus-7-2013/development/02-20-7-1-1-ground-zero-roms-validus-t3560732</XDAUrl>
          </flo>
          <flounder>
-             <Filename>Validus-flounder-7.1.1.Release.13.9.5-Official-20170423-1147.zip</Filename>
+             <Filename>Validus-flounder-7.1.2.RC.14.1-Official-20170504-0824.zip</Filename>
              <RomUrl
                  id="rom"
                  title="Rom"
-                 description="Download Validus build">https://www.androidfilehost.com/?fid=745425885120726508</RomUrl>
+                 description="Download Validus build">https://www.androidfilehost.com/?fid=817550096634767009</RomUrl>
              <GappsUrl
                 id="gapps"
                 title="Gapps"
