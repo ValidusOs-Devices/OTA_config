@@ -57,11 +57,11 @@
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
          </bullhead>
          <flo>
-             <Filename>Validus-flo-7.1.2.Beta.14.0-Official-20170501-1043.zip</Filename>
+             <Filename>Validus-flo-7.1.2.RC.14.2-Official-20170512-1524.zip</Filename>
              <RomUrl
                  id="rom"
                  title="Rom"
-                 description="Download Validus build">https://www.androidfilehost.com/?fid=673368273298951546</RomUrl>
+                 description="Download Validus build">https://www.androidfilehost.com/?fid=673368273298954139</RomUrl>
              <GappsUrl
                 id="gapps"
                 title="Gapps"
@@ -69,7 +69,7 @@
             <XDAUrl
                 id="xda"
                 title="XDA"
-                description="Visit XDA thread">https://forum.xda-developers.com/nexus-7-2013/development/02-20-7-1-1-ground-zero-roms-validus-t3560732</XDAUrl>
+                description="Visit XDA thread">https://forum.xda-developers.com/ground-zero-roms/ground-zero-roms-feature-development/02-20-7-1-1-ground-zero-roms-validus-t3560732</XDAUrl>
          </flo>
          <flounder>
              <Filename>Validus-flounder-7.1.2.RC.14.1-Official-20170504-0824.zip</Filename>
