@@ -1,113 +1,91 @@
 ====================
-     05-03-2017
+     05-14-2017
 ====================
 
 
-   * device/wingtech/wt88047/
-327737e wt88047: charger: Switch to CM charger libhealthd
+   * packages/apps/Snap/
+0d4be88 Snap: Fix crash switching from back to front cam in video mode
 
 ====================
-     05-02-2017
+     05-13-2017
+====================
+
+   * OTA_config/
+eda5e2b Flo 05/12
+
+====================
+     05-12-2017
+====================
+
+   * OTA_config/
+b17190e Bullhead 05/11
+
+====================
+     05-11-2017
 ====================
 
 
    * build/
-66e7719 N2G47O
-303299f N2G47N
-bfaf468 N2G47M
-dd3f3c2 N2G47L
-9d8aff8 N2G47K
-67d5c57 Update Security String to 2017-05-05 on nyc-dev
-e1d1113 Update Security String to 2017-05-01 on nyc-dev
-fa1f5a9 N2G47I
-412fe7e N2G47H
-37d5ea4 N2G47G
-3b78e8f N2G47F
+1a100c4 Don't overwrite device audio_effects.conf with aosp frameworks/av one
 
    * frameworks/av/
-e4af231 Add bounds check in SoftAACEncoder2::onQueueFilled()
-6fbc016 Fix NPDs in h263 decoder
-4d2d5d2 Fix out of bounds access
-07db334 Fix integer overflow and divide-by-zero
-84ef9b5 Validate lengths in HEVC metadata parsing
-2141d0f AudioFlinger: Check framecount overflow when creating track
+1b06762 stagefright: Remove the HAL3 limitation from the video reference clock selection
 
    * frameworks/base/
-552cb7c Remove bg_non_interactive cgroup [ DO NOT MERGE ]
-57ccc45 [DO NOT MERGE] Don't allow permission change to runtime
-1c55e4d [DO NOT MERGE] Throw exception if slot has invalid offset
-be5cc96 [DO NOT MERGE] Check bounds in offsetToPtr
-f3e8da5 Fix issue with saving admins before finishing loading.
-dcdd0e2 resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release
-56eedb2 Protect Bluetooth OPP ACCEPT and DECLINE broadcast
-0f17d2d fix anr when concurrent request provider
-5346f24 Ensure that the decor view is attached to window.
-40dabea6 Query geo description in worker thread to prevent ANR
-160d538 fix foreground process will be mistakenly killed when it uses content provider.
-409104e Fix PacketKeepalive.stop() crash
-04c8011 Restart persistent process if start timeout.
-30fe56c fix system_server crash issue caused by fd leak.
-
-   * frameworks/native/
-323752f binder: remove cgroup interactions [ DO NOT MERGE ]
+ef7d880 base: SystemUI: add dedicated TextView for OmniJaws error marker
+d021439 base: SystemUI: dont show OmniJaws error that prominent
+d6226f0 base: SystemUI: dont hide weather forcast data on errors
+2a4b2e4 base: SystemUI: thread protect keyguard callbacks
+e77c162 base: SystemUI: use new OmniJaws error broadcasts
+45c54b0 base: SystemUI: remove force weather update bits
+c7e39aa base: SystemUI: qs: location tile quickbar press is just toggle
+abff617 media: profiles: use correct values for timelapse profiles check
+11832a8 Fix Aosp bug on custom apps tiles: color not changing on tile state change
+50e2162 [1/2] base: featureize ro.recents.grid
 
    * manifest/
-3244d17 7.1.2_r8
+eb5f810 DspLibs
+356d8b4 Track system media
+a3d24ba Track our own MusicFX for dsp
 
-   * system/bt/
-01c8891 resolve merge conflicts of a3ee2e35 to nyc-dev
+   * packages/apps/MusicFX/
+dfae2f9 Bring in Validus theming
 
-   * system/core/
-89005cc libcutils: only change cgroup when fd is initialized [ DO NOT MERGE ]
-bfeb9a1 init.rc: remove bg_non_interactive cgroup [ DO NOT MERGE ]
+   * packages/apps/WolvesDen/
+02cdaa9 Add settings switch for stock/grid recents style
+
+   * packages/inputmethods/LatinIME/
+44816e8 Change keyboard height
+
+   * packages/services/OmniJaws/
+3e98e9e OmniJaws: widget layout madness
+aae1669 OmniJaws: dont show OmniJaws error that prominent
+6ba410b Automatic translation import
+a7a4cfc OmniJaws: come here all you hidden bugs into the bright light
+f95644f OmniJaws: weather widget fixes
+f6b8f63 OmniJaws: add error broadcast
+e772c91 OmniJaws: add weather widget
+26f7a56 OmniJaws: remove separation between force and not force update
+00c242d OmniJaws: add fetch weather data retry loop
+183f004 OmniJaws: apply default size on omnirom logo
+bb195dd Automatic translation import
+0b99b8d OmniJaws: use vector logo
+0bcf078 Automatic translation import
+086015f OmniJaws: Clean up unused imports, simpify few things
+3b7fcb7 OmniJaws: Add menu item to search for Chronus icons
+e23340d Fix potential actionbar npe
+d675224 OmniJaws: manifest add DEFAULT category to activities
+
+   * system/sepolicy/
+9601b6d sepolicy: Allow system_server to set theme_prop
 
    * vendor/validus/
-eae7337 Magisk apk 4.3.3
+7ce6ee8 Add dsplibs to build as well as add a way to disable per device
 
 ====================
-     05-01-2017
+     05-10-2017
 ====================
 
    * OTA_config/
-b2bbafd Flo 05/01
-796cddb ota: bacon 04/30
-8ceaea6 Fix OTA
-28c606d Clark 04/30
-
-   * hardware/libhardware_legacy/
-34e331e wifi: add firmware loader support for the non-LKM case
-4c4410d wifi: Change USES_TI_MAC80211 to a BoardConfig flag
-8c738d0 wifi: Import CID_PATH from samsung_macloader.h
-644cb5c Nan: Changes to compile hal with Sigma_dut
-baf8c81 insmod: Add support for kernels that don't have finit_module
-
-   * packages/apps/MusicFX/
-e3e44ee Better layout for the Reverb spinner
-bfd00fd Theming: Center Visualizer view
-c372cb0 Theming: add missing reverb effects list background color
-
-   * packages/services/Telephony/
-fbcd8b9 VoicemailSettingsActivity: Fix NPE
-0296472 Revert "Add support to launch call barring"
-ae9e0c2 Telephony: Number of slot should start with 1
-
-   * system/sepolicy/
-1297c28 Merge tag 'android-7.1.2_r2' into n7.1.2
-
-====================
-     04-30-2017
-====================
-
-
-====================
-     04-29-2017
-====================
-
-
-   * vendor/codeaurora/telephony/
-a57c572 IMS-VT: Send static image in a Video Call
-0e94dd0 Merge remote-tracking branch 'los/cm-14.1' into HEAD
-
-   * vendor/qcom/opensource/dataservices/
-d736d3a dataservices: Don't pollute the tree
+a369cc1 Clark 05/09
 
