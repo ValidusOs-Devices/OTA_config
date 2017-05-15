@@ -72,11 +72,11 @@
                 description="Visit XDA thread">https://forum.xda-developers.com/ground-zero-roms/ground-zero-roms-feature-development/02-20-7-1-1-ground-zero-roms-validus-t3560732</XDAUrl>
          </flo>
          <flounder>
-             <Filename>Validus-flounder-7.1.2.RC.14.1-Official-20170504-0824.zip</Filename>
+             <Filename>Validus-flounder-7.1.2.RC.14.2-Official-20170515-2040.zip</Filename>
              <RomUrl
                  id="rom"
                  title="Rom"
-                 description="Download Validus build">https://www.androidfilehost.com/?fid=817550096634767009</RomUrl>
+                 description="Download Validus build">https://www.androidfilehost.com/?fid=745425885120731997</RomUrl>
              <GappsUrl
                 id="gapps"
                 title="Gapps"
@@ -84,7 +84,7 @@
           <XDAUrl
                 id="xda"
                 title="XDA"
-                description="Visit XDA thread">https://forum.xda-developers.com/nexus-9/development/rom-gzroms-tesla-flounder-2015-06-19-t3139058</XDAUrl>
+                description="Visit XDA thread">https://forum.xda-developers.com/ground-zero-roms/ground-zero-roms-feature-development/rom-gzroms-tesla-flounder-2015-06-19-t3139058</XDAUrl>
          </flounder>
          <clark>
              <Filename>Validus-clark-7.1.2.RC.14.2-Official-20170509-2050.zip</Filename>
