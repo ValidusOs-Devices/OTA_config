@@ -1,91 +1,52 @@
 ====================
-     05-14-2017
+     05-22-2017
 ====================
 
 
-   * packages/apps/Snap/
-0d4be88 Snap: Fix crash switching from back to front cam in video mode
-
 ====================
-     05-13-2017
-====================
-
-   * OTA_config/
-eda5e2b Flo 05/12
-
-====================
-     05-12-2017
-====================
-
-   * OTA_config/
-b17190e Bullhead 05/11
-
-====================
-     05-11-2017
+     05-21-2017
 ====================
 
 
-   * build/
-1a100c4 Don't overwrite device audio_effects.conf with aosp frameworks/av one
+   * packages/apps/Settings/
+d88825d Merge pull request #3 from GtrCraft/n7.1.2
 
-   * frameworks/av/
-1b06762 stagefright: Remove the HAL3 limitation from the video reference clock selection
+====================
+     05-20-2017
+====================
 
-   * frameworks/base/
-ef7d880 base: SystemUI: add dedicated TextView for OmniJaws error marker
-d021439 base: SystemUI: dont show OmniJaws error that prominent
-d6226f0 base: SystemUI: dont hide weather forcast data on errors
-2a4b2e4 base: SystemUI: thread protect keyguard callbacks
-e77c162 base: SystemUI: use new OmniJaws error broadcasts
-45c54b0 base: SystemUI: remove force weather update bits
-c7e39aa base: SystemUI: qs: location tile quickbar press is just toggle
-abff617 media: profiles: use correct values for timelapse profiles check
-11832a8 Fix Aosp bug on custom apps tiles: color not changing on tile state change
-50e2162 [1/2] base: featureize ro.recents.grid
 
-   * manifest/
-eb5f810 DspLibs
-356d8b4 Track system media
-a3d24ba Track our own MusicFX for dsp
+   * packages/apps/Settings/
+5c15b98 Remove duplicate options in accessibility settings
+ee3f457 DisplaySettings: font size in 5% steps from 80% to 130%
 
-   * packages/apps/MusicFX/
-dfae2f9 Bring in Validus theming
-
-   * packages/apps/WolvesDen/
-02cdaa9 Add settings switch for stock/grid recents style
-
-   * packages/inputmethods/LatinIME/
-44816e8 Change keyboard height
-
-   * packages/services/OmniJaws/
-3e98e9e OmniJaws: widget layout madness
-aae1669 OmniJaws: dont show OmniJaws error that prominent
-6ba410b Automatic translation import
-a7a4cfc OmniJaws: come here all you hidden bugs into the bright light
-f95644f OmniJaws: weather widget fixes
-f6b8f63 OmniJaws: add error broadcast
-e772c91 OmniJaws: add weather widget
-26f7a56 OmniJaws: remove separation between force and not force update
-00c242d OmniJaws: add fetch weather data retry loop
-183f004 OmniJaws: apply default size on omnirom logo
-bb195dd Automatic translation import
-0b99b8d OmniJaws: use vector logo
-0bcf078 Automatic translation import
-086015f OmniJaws: Clean up unused imports, simpify few things
-3b7fcb7 OmniJaws: Add menu item to search for Chronus icons
-e23340d Fix potential actionbar npe
-d675224 OmniJaws: manifest add DEFAULT category to activities
-
-   * system/sepolicy/
-9601b6d sepolicy: Allow system_server to set theme_prop
+   * packages/apps/ThemeInterfacer/
+5aeba49 Add interface to get API version and app authentication status
+069e629 Fix permissions for CTS [2/2]
 
    * vendor/validus/
-7ce6ee8 Add dsplibs to build as well as add a way to disable per device
+097ee44 add potter to devices
 
 ====================
-     05-10-2017
+     05-19-2017
 ====================
 
-   * OTA_config/
-a369cc1 Clark 05/09
+
+   * frameworks/base/
+a5a118b bt manager: add missing mHandler
+
+   * vendor/validus/
+de06b3b Merge pull request #4 from GtrCraft/patch-1
+ec0b397 Enable Night Display globally
+
+====================
+     05-18-2017
+====================
+
+
+   * packages/apps/Settings/
+ee1c0e7 Headset: Add to sound settings
+
+   * vendor/validus/
+a166b0b cm: overlay: Enable auto-power-save modes globally
 
