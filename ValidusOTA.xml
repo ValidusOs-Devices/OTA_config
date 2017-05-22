@@ -87,11 +87,11 @@
                 description="Visit XDA thread">https://forum.xda-developers.com/ground-zero-roms/ground-zero-roms-feature-development/rom-gzroms-tesla-flounder-2015-06-19-t3139058</XDAUrl>
          </flounder>
          <clark>
-             <Filename>Validus-clark-7.1.2.RC.14.2-Official-20170509-2050.zip</Filename>
+             <Filename>Validus-clark-7.1.2.RC.14.2-Official-20170522-1638.zip</Filename>
              <RomUrl
                  id="rom"
                  title="Rom"
-                 description="Download Validus build">https://www.androidfilehost.com/?fid=457095661767159856</RomUrl>
+                 description="Download Validus build">https://www.androidfilehost.com/?fid=817550096634771270</RomUrl>
              <GappsUrl
                 id="gapps"
                 title="Gapps"
@@ -99,7 +99,7 @@
              <XDAUrl
                 id="xda"
                 title="XDA"
-                description="Visit XDA thread">https://forum.xda-developers.com/moto-x-style/development/02-22-7-1-1-ground-zero-roms-validus-t3561477</XDAUrl>
+                description="Visit XDA thread">https://forum.xda-developers.com/ground-zero-roms/ground-zero-roms-feature-development/02-22-7-1-1-ground-zero-roms-validus-t3561477</XDAUrl>
          </clark>
         <OnePlus>
             <Filename>Validus-onyx-7.1.2.RC.14.1-Official-20170503-1618.zip</Filename>
